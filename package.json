@@ -2,11 +2,11 @@
   "name": "coffee",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "animejs": "^4.5.0",
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",
+    "express": "^5.2.1",
     "framer-motion": "^13.2.0",
     "lucide-react": "^1.44.0",
     "motion": "^13.2.0",
