@@ -19,10 +19,9 @@ export const HeroSection: React.FC = () => {
             : 'bg-gradient-to-tr from-[#D4A362]/20 via-[#F5EFE6]/50 to-transparent opacity-80'
         }`}
       />
-
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-        {/* Left Column: Typography & Intentional Macro-Whitespace */}
-        <div className="lg:col-span-7 flex flex-col items-start text-left">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-center">
+        {/* Typography Column: Appears below video on mobile (order-2), left on desktop (lg:order-1) */}
+        <div className="order-2 lg:order-1 lg:col-span-7 flex flex-col items-start text-left">
           {/* Subtle Eyebrow Pill */}
           <motion.div
             initial={{ opacity: 0, y: -16 }}
@@ -123,12 +122,12 @@ export const HeroSection: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Right Column: Double-Bezel Frame with Cinematic AI Rotating Coffee Video */}
+        {/* Video Column: Appears on TOP on mobile (order-1), right on desktop (lg:order-2) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-          className="lg:col-span-5 relative flex justify-center"
+          className="order-1 lg:order-2 lg:col-span-5 relative flex justify-center w-full"
         >
           {/* Double-Bezel Frame */}
           <div
