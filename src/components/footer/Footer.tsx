@@ -70,8 +70,8 @@ export const Footer: React.FC = () => {
             </div>
             <p className="leading-relaxed">
               Arnaldo Boulevard, Roxas City, Capiz 5800<br />
-              Mon–Thu: 08:00 AM – 11:30 PM<br />
-              Fri–Sun: 08:00 AM – 12:00 MN
+              Mon-Thu: 08:00 AM - 11:30 PM<br />
+              Fri-Sun: 08:00 AM - 12:00 MN
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export const Footer: React.FC = () => {
             </div>
             <p className="leading-relaxed">
               108 Rizal Street, Downtown District<br />
-              Daily: 07:30 AM – 10:30 PM<br />
+              Daily: 07:30 AM - 10:30 PM<br />
               +63 (036) 621-LUNA
             </p>
           </div>
@@ -115,6 +115,14 @@ export const Footer: React.FC = () => {
                   }`}
                 >
                   Extraction Science
+                </a>
+                <a
+                  href="#announcements"
+                  className={`transition-colors ${
+                    isDark ? 'hover:text-white' : 'hover:text-[#1C1510]'
+                  }`}
+                >
+                  Events & Dispatches
                 </a>
                 <a
                   href="#locations"

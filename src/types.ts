@@ -27,3 +27,21 @@ export interface Branch {
   foodpandaUrl: string;
   vibeDescription: string;
 }
+
+export interface Post {
+  id: string;
+  title: string;
+  excerpt: string;
+  category: 'Event' | 'Promo' | 'Announcement' | 'Brew Guide';
+  date: string;
+  readTime: string;
+  tag: string;
+  image: string;
+  featured?: boolean;
+  linkText?: string;
+  actionUrl?: string;
+  author: {
+    name: string;
+    role: string;
+  };
+}

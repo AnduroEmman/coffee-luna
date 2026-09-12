@@ -1,4 +1,4 @@
-import { MenuItem, Branch } from '../types';
+import { MenuItem, Branch, Post } from '../types';
 
 export const FOODPANDA_STORE_URL = 'https://www.foodpanda.ph/restaurant/l95v/luna-coffee-the-triangle';
 
@@ -233,43 +233,111 @@ export const MENU_ITEMS: MenuItem[] = [
   }
 ];
 
+export const POSTS: Post[] = [
+  {
+    id: 'starlight-acoustic-sessions',
+    title: 'Starlight Acoustic Sessions at The Triangle',
+    excerpt: 'Join us every Friday evening for live lo-fi and indie acoustic sets on the open terrazzo patio. Enjoy specialty pour-overs under the Capiz night sky.',
+    category: 'Event',
+    date: 'Sep 18, 2026',
+    readTime: '3 min read',
+    tag: 'Live Gathering',
+    image: 'https://images.deliveryhero.io/image/fd-ph/LH/l95v-hero.jpg',
+    featured: true,
+    linkText: 'Reserve Patio Table',
+    actionUrl: '#locations',
+    author: {
+      name: 'Marco Luna',
+      role: 'Head of Experience'
+    }
+  },
+  {
+    id: 'spanish-latte-croffle-pairing',
+    title: 'Midweek Ritual: Spanish Latte and Hot Croffle Combo',
+    excerpt: 'Enjoy 15% off our signature Spanish Latte paired with a freshly pressed French all-butter Liege Croffle every Tuesday and Wednesday afternoon.',
+    category: 'Promo',
+    date: 'Sep 15, 2026',
+    readTime: '2 min read',
+    tag: 'Limited Special',
+    image: 'https://images.deliveryhero.io/image/global-menu-service/FP_PH/vendor/l95v/product/486f58cf-3742-4240-896a-656ae62c99bb.jpg',
+    linkText: 'Claim on foodpanda',
+    actionUrl: FOODPANDA_STORE_URL,
+    author: {
+      name: 'Chef Danielle',
+      role: 'Bakery Lead'
+    }
+  },
+  {
+    id: 'monsoon-harvest-single-origin',
+    title: 'New Harvest Arrival: Benguet Atok Typica Micro-Lot',
+    excerpt: 'Our roastery received 60kg of parchment coffee from Benguet highlands. Expect tasting notes of wild honey, dried apricot, and dark chocolate crema.',
+    category: 'Announcement',
+    date: 'Sep 10, 2026',
+    readTime: '4 min read',
+    tag: 'Roastery Update',
+    image: 'https://images.deliveryhero.io/image/global-menu-service/FP_PH/vendor/l95v/product/125174202/207432b8-7fba-41bf-a37a-2e043b9a53e6.jpg',
+    linkText: 'Explore Coffee Profile',
+    actionUrl: '#craft',
+    author: {
+      name: 'Ramon S.',
+      role: 'Lead Roaster'
+    }
+  },
+  {
+    id: 'brewing-the-perfect-v60-at-home',
+    title: 'Barista Secrets: Dialing In Your V60 at Home',
+    excerpt: 'A practical four-step brew recipe using 15g coffee to 240g water at 93°C for bright acidity and lingering sweetness in your morning brew.',
+    category: 'Brew Guide',
+    date: 'Sep 02, 2026',
+    readTime: '5 min read',
+    tag: 'Masterclass',
+    image: 'https://images.deliveryhero.io/image/global-menu-service/FP_PH/vendor/l95v/product/125178293/07fafe63-4798-4ec4-9114-fa824e89ca38.jpg',
+    linkText: 'Read Brew Recipe',
+    actionUrl: '#craft',
+    author: {
+      name: 'Erika V.',
+      role: 'Senior Barista'
+    }
+  }
+];
+
 export const BRANCHES: Branch[] = [
   {
     id: 'the-triangle',
-    name: 'Luna Coffee — The Triangle',
-    designation: 'Flagship Hub & Terrace',
-    tagline: 'Arnaldo Boulevard, Roxas City · Active Foodpanda Partner',
+    name: 'Luna Coffee - The Triangle',
+    designation: 'Flagship Hub and Terrace',
+    tagline: 'Arnaldo Boulevard, Roxas City - Active Foodpanda Partner',
     address: 'The Triangle, Arnaldo Boulevard, Roxas City, Capiz 5800',
     coords: '11.5978° N, 122.7477° E',
-    hours: '08:00 AM – 11:30 PM (Mon-Thu) · 08:00 AM – 12:00 MN (Fri-Sun)',
+    hours: '08:00 AM - 11:30 PM (Mon-Thu) | 08:00 AM - 12:00 MN (Fri-Sun)',
     phone: '+63 917 123 5862',
     status: 'Open Now',
     foodpandaUrl: FOODPANDA_STORE_URL,
     features: [
-      '⚡ Foodpanda Superfast Delivery & Store Pickup Available',
-      '🌱 Oatside Certified Oatmilk Specialty Bar',
-      '🧇 Hot-Pressed Fresh Croffles & Basque Cheesecake Daily',
-      '✨ Outdoor Starlight Terrazzo Patio Dining'
+      'Foodpanda Superfast Delivery and Store Pickup Available',
+      'Oatside Certified Oatmilk Specialty Bar',
+      'Hot-Pressed Fresh Croffles and Basque Cheesecake Daily',
+      'Outdoor Starlight Terrazzo Patio Dining'
     ],
     image: 'https://images.deliveryhero.io/image/fd-ph/LH/l95v-hero.jpg',
     vibeDescription: 'Our flagship sanctuary at The Triangle on Arnaldo Boulevard. Designed with warm timber, glowing brass accents, and acoustic warmth for both work and gatherings.'
   },
   {
     id: 'rizal-st',
-    name: 'Luna Coffee — Rizal Street',
+    name: 'Luna Coffee - Rizal Street',
     designation: 'Original Espresso Bar',
-    tagline: 'Downtown Historic District · Slow Brews & Vinyl',
+    tagline: 'Downtown Historic District - Slow Brews and Vinyl',
     address: '108 Rizal Street, Downtown District, Roxas City',
     coords: '11.5845° N, 122.7512° E',
-    hours: '07:30 AM – 10:30 PM Daily',
+    hours: '07:30 AM - 10:30 PM Daily',
     phone: '+63 (036) 621-LUNA',
     status: 'Open Now',
     foodpandaUrl: FOODPANDA_STORE_URL,
     features: [
-      '☕ Dual V60 Single-Origin Slow Bar',
-      '🎵 Curated Lo-Fi & Vinyl Listening Lounge',
-      '🛵 Takeout & Direct Foodpanda Courier Counter',
-      '❄️ Sub-Zero Nitrogen Draft Station'
+      'Dual V60 Single-Origin Slow Bar',
+      'Curated Lo-Fi and Vinyl Listening Lounge',
+      'Takeout and Direct Foodpanda Courier Counter',
+      'Sub-Zero Nitrogen Draft Station'
     ],
     image: 'https://images.deliveryhero.io/image/fd-ph/LH/l95v-listing.jpg',
     vibeDescription: 'The original espresso laboratory with polished concrete surfaces, warm amber pendant lamps, and an intimate specialty coffee bar experience.'

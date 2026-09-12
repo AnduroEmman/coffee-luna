@@ -8,6 +8,7 @@ import { HeroSection } from './components/hero/HeroSection';
 import { CoffeeExtractionSimulator } from './components/motion/CoffeeExtractionSimulator';
 import { CoffeeJourneyTimeline } from './components/motion/CoffeeJourneyTimeline';
 import { MenuSection } from './components/menu/MenuSection';
+import { BlogSection } from './components/blog/BlogSection';
 import { Locations } from './components/branches/Locations';
 import { ReviewsSection } from './components/reviews/ReviewsSection';
 import { Footer } from './components/footer/Footer';
@@ -76,10 +77,13 @@ const AppContent: React.FC = () => {
         {/* 7. Curated Specialty Menu with Sensory Radar Spectrum Bars */}
         <MenuSection />
 
-        {/* 8. The Triangle & Rizal St Sanctuaries */}
+        {/* 8. Dispatches, Events, and Promos Blog Feed */}
+        <BlogSection />
+
+        {/* 9. The Triangle & Rizal St Sanctuaries */}
         <Locations />
 
-        {/* 9. Verified Customer Voices */}
+        {/* 10. Verified Customer Voices */}
         <ReviewsSection />
       </main>
 

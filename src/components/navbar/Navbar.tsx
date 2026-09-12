@@ -13,6 +13,7 @@ export const Navbar: React.FC = () => {
   const navLinks = [
     { label: 'Menu', href: '#menu' },
     { label: 'Craft Science', href: '#craft' },
+    { label: 'Dispatches', href: '#announcements' },
     { label: 'Locations', href: '#locations' },
     { label: 'Reviews', href: '#reviews' },
   ];
