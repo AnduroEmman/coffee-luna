@@ -74,11 +74,11 @@ const AppContent: React.FC = () => {
         {/* 6. Kinetic Bean-to-Cup Journey Timeline (Harvest -> Roast -> Grind -> Pour) */}
         <CoffeeJourneyTimeline />
 
-        {/* 7. Curated Specialty Menu with Sensory Radar Spectrum Bars */}
-        <MenuSection />
-
-        {/* 8. Dispatches, Events, and Promos Blog Feed */}
+        {/* 7. Dispatches, Events, and Promos Blog Feed (Above Menu) */}
         <BlogSection />
+
+        {/* 8. Curated Specialty Menu with Sensory Radar Spectrum Bars */}
+        <MenuSection />
 
         {/* 9. The Triangle & Rizal St Sanctuaries */}
         <Locations />

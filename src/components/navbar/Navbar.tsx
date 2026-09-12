@@ -11,9 +11,9 @@ export const Navbar: React.FC = () => {
   const isDark = theme === 'dark';
 
   const navLinks = [
+    { label: 'Dispatches', href: '#announcements' },
     { label: 'Menu', href: '#menu' },
     { label: 'Craft Science', href: '#craft' },
-    { label: 'Dispatches', href: '#announcements' },
     { label: 'Locations', href: '#locations' },
     { label: 'Reviews', href: '#reviews' },
   ];
